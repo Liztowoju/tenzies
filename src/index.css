@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Karla:wght@400;500;700&display=swap');
+
+</style>* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  padding: 30px;
+  font-family: 'karla', sans-serif;
+}
+
+.gameboard {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  max-width: 320px;
+  margin: 0 auto;
+  height: 400px;
+  padding: 30px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* justify-content: center; */
+}
+
+h1 {
+  /* font-family: Karla; */
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #2B283A;
+}
+
+h3 {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #2B283A;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+
+
+}
+
+.die-look {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.die-num {
+  font-size: 2rem;
+}
