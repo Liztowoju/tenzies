@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Karla:wght@400;500;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Karla:wght@400;500;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -18,14 +18,10 @@ body {
   margin: 0 auto;
   height: 420px;
   padding: 30px;
-  /* display: flex; */
-  /* align-items: center;  */
-   /* justify-content: center; */
-  /* justify-content: center; */
 }
 
 h1 {
-  /* font-family: Karla; */
+  font-family: Karla;
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
@@ -69,7 +65,7 @@ h3 {
   font-size: 2rem;
 }
 
-.roll-button{
+/* .roll-button{
 width: 100px;height: 50px;
 margin: 20px auto;
 background: #5035FF;
@@ -87,4 +83,4 @@ cursor: pointer;
 }
 .roll-button:active{
  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7)
-}
+} */
