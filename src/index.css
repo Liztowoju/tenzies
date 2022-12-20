@@ -65,7 +65,7 @@ h3 {
   font-size: 2rem;
 }
 
-/* .roll-button{
+.roll-button{
 width: 100px;height: 50px;
 margin: 20px auto;
 background: #5035FF;
@@ -83,4 +83,4 @@ cursor: pointer;
 }
 .roll-button:active{
  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7)
-} */
+}
