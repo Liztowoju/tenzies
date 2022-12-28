@@ -47,7 +47,7 @@ p {
   gap: 20px;
 }
 
-.die-look {
+/* .die-look {
   height: 50px;
   width: 50px;
   border-radius: 10px;
@@ -56,7 +56,7 @@ p {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
+} */
 
 .die-num {
   font-size: 2rem;
@@ -66,7 +66,7 @@ p {
 width: 150px;
 height: 50px;
 margin: 20px auto;
-background: #5035FF;
+background: #0B2434;
 border-radius: 6px;
 color: white;
 font-family: 'karla', sans-serif;

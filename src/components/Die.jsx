@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Die(props) {
     const styles = {
-        backgroundColor: props.isHeld ? '#59E391' : 'white'
+        backgroundColor: props.isHeld ? 'tomato' : 'white'
     }
 
 
@@ -22,25 +22,13 @@ export default function Die(props) {
         // <>
         {/* // if(i > 3) */}
         // dots.push(<div className="fourth-face dice">);
-        dots.push(<span className='dot' key={i}></span>);
+        dots.push(<span  className='dot' key={i}></span>);
         {/* </> */}
     }
 
     return (
 
-
-    // return indents;
-    // <div
-    //     className="die-look"
-    //     style={styles}
-    //     onClick={props.hold}
-    // >
-    //     <h3
-    //         className="die-num" >
-    //         {props.value}
-    //     </h3>
-    // </div>
-    <div className={'dice ' + stringifyNumber(props.value) + '-face'}>
+    <div className={'dice ' + stringifyNumber(props.value) + '-face'}  style={styles} onClick={props.hold}>
         {dots}
     </div>
     )
