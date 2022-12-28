@@ -28,6 +28,7 @@ export default function App() {
 
   function dice() {
     const diceMarks = []
+    // const rose = [a,b,c,d,e,f]
     for (let i = 0; i < 10; i++) {
       diceMarks.push(
         {
