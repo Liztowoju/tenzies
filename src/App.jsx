@@ -10,6 +10,7 @@ import Confetti from 'react-confetti'
 export default function App() {
   const [newDice, setNewDice] = React.useState(dice())
   const [tenzies, setTenzies] = React.useState(false)
+  const [rollsCount, setRollsCount] = React.useState(0)
 
   React.useEffect(function () {
     const allHeld = newDice.every(function (die) {
@@ -60,6 +61,7 @@ export default function App() {
         })
   
       })
+      setRollsCount(rollsCount + 1)
     } else{
       setTenzies(false)
       setNewDice(dice())
@@ -67,12 +69,11 @@ export default function App() {
     
   }
 
-
   return (
     <main className='gameboard'>
       {tenzies && <Confetti/>}
       <h1 className="title">Tenzies</h1>
-      <p className="instructions">{ tenzies? 'Yippee! You won. Click on New Game to play again' : 
+      <p className="instructions">{ tenzies? `You won, with  ${rollsCount} rolls. Click to play again` : 
       'Roll until all dice are the same. Click each die to freeze it at its current value between rolls'}.</p>
        <div className='dice-container'>
         {newDice.map(function (die) {
