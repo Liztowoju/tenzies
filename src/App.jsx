@@ -22,7 +22,7 @@ export default function App() {
     })
     if (allHeld && allSameValue) {
       setTenzies(true)
-      setRollsCount(0)
+      // setRollsCount(0)
       console.log('yipee')
     }
   }, [newDice])
@@ -65,6 +65,7 @@ export default function App() {
       setRollsCount(rollsCount + 1)
     } else{
       setTenzies(false)
+      setRollsCount(0)
       setNewDice(dice())
     }
     
