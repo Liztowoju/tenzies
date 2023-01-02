@@ -22,6 +22,7 @@ export default function App() {
     })
     if (allHeld && allSameValue) {
       setTenzies(true)
+      setRollsCount(0)
       console.log('yipee')
     }
   }, [newDice])
@@ -74,7 +75,7 @@ export default function App() {
       {tenzies && <Confetti/>}
       <h1 className="title">Tenzies</h1>
       <p className="instructions">{ tenzies? `You won, with  ${rollsCount} rolls. Click to play again` : 
-      'Roll until all dice are the same. Click each die to freeze it at its current value between rolls'}.</p>
+      'Roll till all dice are the same. Click each die to hold it at your preferred value'}.</p>
        <div className='dice-container'>
         {newDice.map(function (die) {
           return <Die hold={function () { return holdDice(die.id) }}
